@@ -1,0 +1,13 @@
+<html>
+    <body style="background-color:rgb(185, 158, 202); text-align:center;">
+        <h2>Coverting json data into Vechile Object</h2>
+        <p id="demo"></p>
+        <script>
+        document.getElementById("demo").style.fontSize='25px';
+        document.getElementById("demo").style.color='whitesmoke';
+        const jsonEx = '{ "name": "Toyota Rav4", "engine": "2.5L", "price": 32000 }';
+        const Vehicle=JSON.parse(jsonEx);
+        document.getElementById("demo").innerHTML=Vehicle.name;
+        </script>
+    </body>
+</html>
